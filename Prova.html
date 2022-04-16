@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <link rel="stylesheet" href="prova.css">
+</head>
+<body class="corpo">
+    <div class="folha">
+
+        <h1 class="title">Atividade baseada no modelo da Avaliação Prática de JavaScript</h1>
+
+       
+        
+        <h1 class="form"> Nome:
+            <input type="text" id="nome" >
+        </h1>
+        <div class="form" id="quest_um"> <b> 1. Quais cursos são ofertados na EEEP Amélia Figueiredo de Lavor.
+        </b>
+            <div><textarea id="campo_text" cols="50" rows="3"></textarea></div>
+        </div>
+
+        <div class="form" id="quest_dois"><b> 2. Marque as opções que possui os sistemas de numerações novos que 
+            aprendemos no 1º ano de Informática.</b>
+            <div class="quest">
+                <label for="octal" class="options">Sistema Octal
+                    <input type="checkbox" id="octal">
+                </label>
+                <label for="bi" class="options">Sistema Binário
+                    <input type="checkbox" id="bi">
+                </label>
+                <label for="deci" class="options">Sistema Decimal
+                    <input type="checkbox" id="deci">
+                </label>
+                <label for="hexa" class="options">Sistema Hexadecimal
+                    <input type="checkbox" id="hexa">
+                </label>
+            </div>
+
+            
+        </div>
+
+        <div class="form" id="quest_tres"><b>3. Qual o produto abaixo é mais adequado para limpar uma memória RAM?</b>
+            <div>
+                <label for="alcool_iso" class="options">Álcool Isopropílico
+                    <input type="radio" name="op" id="alcool_iso">
+                </label>
+                <label for="contato" class="options">Limpa Contato
+                    <input type="radio" name="op" id="contato">
+                </label>
+                <label for="alcool" class="options">Álcool 70%
+                    <input type="radio" name="op" id="alcool">
+                </label>
+                <label for="agua" class="options">Água
+                    <input type="radio" name="op" id="agua">
+                </label>
+            </div>
+        </div>
+
+        <div class="form" id="quest_tres"><b>4. Podemos afirmar que o modo de funcionamento de memória RAM em
+            DUAL CHANEL só pode ser feito com pares de módulos de memória. Marque
+            se a afirmação é verdadeira ou falsa.</b>
+            <div>
+                <label for="true" class="options">Verdadeira
+                    <input type="radio" name="op2" id="tr">
+                </label>
+                <label for="false" class="options">Falsa
+                    <input type="radio" name="op2" id="fal">
+                </label>
+            </div>
+        </div>
+        <button class="form" id="botao" onclick="corrigir()"><b>Corrigir</b></button>
+
+        <div id="resu" class="hide">
+            <div>Resumo:</div>
+            <div id="res_nome"></div>
+            <div id="corretas"></div>
+            <div id="percentual"></div>
+        </div>
+    </div>
+    
+</body>
+<script src="prova.js"></script>
+</html>
